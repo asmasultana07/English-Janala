@@ -22,9 +22,9 @@ const displayLevelWord = (words) => {
     const card = document.createElement("div");
     card.innerHTML = `
       <div class="space-y-4 bg-white rounded-xl shadow-sm text-center px-5 py-10">
-            <h2 class="font-bold text-2xl">Eager</h2>
+            <h2 class="font-bold text-2xl">${word.word}</h2>
             <p class="font-semibold text-base">Meaning/Pronounciation</p>
-            <div class="font-medium font-bangla">Eagar /aggrohi</div>
+            <div class="font-medium font-bangla">"${word.meaning} / ${word.pronunciation}"</div>
             <div class="flex justify-between">
                 <button class="btn bg-[#1a91ff10] hover:bg-[#1a91ff80]"><i class="fa-solid fa-circle-info"></i></button>
                 <button class="btn bg-[#1a91ff10] hover:bg-[#1a91ff80]"><i class="fa-solid fa-volume-high"></i></button>
